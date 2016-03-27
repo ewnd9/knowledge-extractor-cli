@@ -1,7 +1,7 @@
 {
   "name": "knowledge-extractor-cli",
   "description": "Tools to explore old projects of yours in `Atom`. Knowledge must not be lost.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "bin": {
     "knowledge-extractor": "cli.js"
