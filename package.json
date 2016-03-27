@@ -1,10 +1,15 @@
 {
   "name": "knowledge-extractor-cli",
-  "description": "",
+  "description": "Tools to explore old projects of yours in `Atom`. Knowledge must not be lost.",
   "version": "0.0.0",
   "main": "lib/index.js",
   "bin": "cli.js",
   "dependencies": {
+    "configstore": "^2.0.0",
+    "execa": "^0.2.2",
+    "globby": "^4.0.0",
+    "hasha": "^2.2.0",
+    "lodash": "^4.6.1",
     "meow": "^3.7.0",
     "update-notifier": "^0.6.0"
   },
@@ -16,7 +21,9 @@
   },
   "author": "ewnd9 <ewndnine@gmail.com>",
   "keywords": [
-    ""
+    "atom",
+    "knowledge",
+    "cli"
   ],
   "license": "MIT",
   "preferGlobal": "true",
@@ -28,7 +35,7 @@
     "lint": "eslint src/*",
     "prepush": "npm run lint && npm test",
     "start": "node cli.js",
-    "test": "ava",
+    "test": "ava --serial --verbose",
     "test:watch": "npm run test -- --watch"
   }
 }
