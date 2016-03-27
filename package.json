@@ -3,7 +3,9 @@
   "description": "Tools to explore old projects of yours in `Atom`. Knowledge must not be lost.",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "bin": "cli.js",
+  "bin": {
+    "knowledge-extractor": "cli.js"
+  },
   "dependencies": {
     "configstore": "^2.0.0",
     "execa": "^0.2.2",
