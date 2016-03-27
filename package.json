@@ -1,0 +1,34 @@
+{
+  "name": "knowledge-extractor-cli",
+  "description": "",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "bin": "cli.js",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "update-notifier": "^0.6.0"
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "babel-eslint": "^5.0.0-beta9",
+    "eslint": "^1.10.3",
+    "husky": "^0.11.3"
+  },
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewnd9/knowledge-extractor-cli.git"
+  },
+  "scripts": {
+    "lint": "eslint src/*",
+    "prepush": "npm run lint && npm test",
+    "start": "node cli.js",
+    "test": "ava",
+    "test:watch": "npm run test -- --watch"
+  }
+}
